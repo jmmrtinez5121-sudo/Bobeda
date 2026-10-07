@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Bóveda",
+    "slug": "boveda",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#060b18",
+    "android": {
+      "package": "com.miboveda.app",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO",
+        "ACCESS_MEDIA_LOCATION",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-local-authentication",
+      "expo-video",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Bóveda usa la cámara frontal para guardar la foto de quien falle el PIN.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Bóveda necesita ver tu galería para guardar tus archivos.",
+          "savePhotosPermission": "Bóveda necesita guardar archivos en tu galería cuando los saques de la bóveda.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "boveda-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "expo": "~57.0.27",
+    "expo-camera": "~57.0.6",
+    "expo-crypto": "~57.0.3",
+    "expo-document-picker": "~57.0.3",
+    "expo-file-system": "~57.0.7",
+    "expo-local-authentication": "~57.0.3",
+    "expo-media-library": "~57.0.5",
+    "expo-screen-capture": "~57.0.4",
+    "expo-secure-store": "~57.0.4",
+    "expo-sharing": "~57.0.22",
+    "expo-status-bar": "~57.0.1",
+    "expo-video": "~57.0.5",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-zip-archive": "^9.5.2"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "private": true
+}
